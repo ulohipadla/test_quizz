@@ -121,7 +121,7 @@ func main() {
 			fmt.Println("ошибка ввода")
 			goto exit
 		}
-		answers_map[j] = (input == "а")
+		answers_map[j] = ([]byte(input)[1] == []byte("а")[1])
 	}
 	calculations(answers_map)
 	fmt.Println("Спасибо! Тестирование окончено.", user_nnnn, user_full)
