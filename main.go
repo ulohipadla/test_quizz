@@ -110,7 +110,6 @@ func main() {
 	fmt.Println("Введите вашу почтy:")
 	_, errs := reader.ReadString('\n')
 	err_handler(errs)
-	fmt.Println(types_map)
 
 	for j, i := range question_array {
 	exit:
